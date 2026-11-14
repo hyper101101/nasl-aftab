@@ -1,58 +1,203 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Nasl Aftab
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/images/nasl-aftab-logo.jpg" alt="Nasl Aftab Logo" width="220">
 </p>
 
-## About Laravel
+<h3 align="center">A Modern E-Commerce Platform for Agricultural Products</h3>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  A Laravel-based e-commerce platform built with React, Inertia.js, and MySQL.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Overview
 
-## Learning Laravel
+**Nasl Aftab** is an e-commerce web application designed to showcase and sell agricultural products, including barberry, saffron, and rose-related products.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The platform provides a product catalog, customer accounts, an administrative dashboard, and customer support features. It aims to provide a structured and user-friendly shopping experience while simplifying product and content management.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Features
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- **Product Catalog:** Browse products across different categories, with product details, pricing, stock information, and availability.
+- **Product Management:** Administrative tools for adding, editing, and managing products.
+- **Shopping Cart:** Add products to a shopping cart and manage selected items.
+- **User Authentication:** Customer registration, login, and account management.
+- **Favorites:** Save and manage favorite products.
+- **Customer Support Chat:** Messaging between customers and administrators.
+- **Comments & Reviews:** Commenting, replies, and reactions on products.
+- **Stock Notifications:** Subscribe to notifications when unavailable products become available again.
+- **Blog System:** Publish and manage articles through the administrative panel.
+- **Admin Dashboard:** Manage products, articles, comments, and administrative accounts.
 
-## Agentic Development
+## Tech Stack
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+| Technology | Purpose |
+|---|---|
+| PHP 8.3+ | Backend development |
+| Laravel 13 | Backend framework |
+| MySQL / SQLite | Database |
+| React 19 | Frontend development |
+| TypeScript | Frontend type safety |
+| Inertia.js 3 | Connecting Laravel and React |
+| Tailwind CSS 4 | Styling |
+| Vite 8 | Frontend build tooling |
 
-```bash
-composer require laravel/boost --dev
+## Architecture
 
-php artisan boost:install
+Nasl Aftab uses Laravel as its backend framework and React for its frontend interface, connected through Inertia.js.
+
+The application follows Laravel's MVC architecture, with dedicated controllers, models, middleware, policies, jobs, and notifications. Frontend pages and reusable components are organized within the React resources directory.
+
+## Project Structure
+
+```text
+nasl-aftab/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   ├── Models/
+│   ├── Jobs/
+│   ├── Notifications/
+│   └── Policies/
+├── database/
+│   ├── migrations/
+│   ├── seeders/
+│   └── factories/
+├── public/
+│   └── images/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   └── lib/
+│   └── views/
+├── routes/
+├── tests/
+├── composer.json
+└── package.json
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## Installation
 
-## Contributing
+### Prerequisites
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Make sure the following tools are installed:
 
-## Code of Conduct
+- PHP 8.3 or later
+- Composer
+- Node.js and npm
+- MySQL (if using MySQL)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 1. Clone the repository
 
-## Security Vulnerabilities
+```bash
+git clone https://github.com/hyper101101/nasl-aftab.git
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+cd nasl-aftab
+```
 
-## License
+### 2. Install PHP dependencies
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+composer install
+```
+
+### 3. Configure environment variables
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+On Windows PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Generate the application key:
+
+```bash
+php artisan key:generate
+```
+
+### 4. Configure the database
+
+The default `.env.example` configuration uses SQLite.
+
+To use MySQL, update the database settings in your `.env` file:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nasl_aftab
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Create the `nasl_aftab` database in MySQL before proceeding.
+
+Alternatively, you can keep SQLite as your database driver.
+
+### 5. Run database migrations
+
+```bash
+php artisan migrate
+```
+
+### 6. Install frontend dependencies
+
+```bash
+npm install --ignore-scripts
+```
+
+### 7. Create the storage symbolic link
+
+```bash
+php artisan storage:link
+```
+
+### 8. Run the application
+
+Start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+In a separate terminal, start the Vite development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://127.0.0.1:8000
+```
+
+### Production Build
+
+To generate optimized frontend assets:
+
+```bash
+npm run build
+```
+
+## Project Status
+
+**Currently in development.**
+
+The repository is being actively developed, and features and implementation details may evolve over time.
+
+## Repository
+
+[GitHub - Nasl Aftab](https://github.com/hyper101101/nasl-aftab)
