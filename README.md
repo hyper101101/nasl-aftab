@@ -31,6 +31,53 @@ The platform provides a product catalog, customer accounts, an administrative da
 - **Blog System:** Publish and manage articles through the administrative panel.
 - **Admin Dashboard:** Manage products, articles, comments, and administrative accounts.
 
+## Screenshots
+
+### Homepage
+<p align="center">
+  <img src="public/images/screenshots/main.png" alt="Nasl Aftab Homepage" width="90%">
+</p>
+
+### Product Catalog
+<p align="center">
+  <img src="public/images/screenshots/products.png" alt="Product Catalog" width="90%">
+</p>
+
+### Product Details
+<p align="center">
+  <img src="public/images/screenshots/product-details.png" alt="Product Details" width="90%">
+</p>
+
+### Shopping Cart
+<p align="center">
+  <img src="public/images/screenshots/cart.png" alt="Shopping Cart" width="90%">
+</p>
+
+### Blog Management
+<p align="center">
+  <img src="public/images/screenshots/blogs.png" alt="Blog Management" width="90%">
+</p>
+
+### Customer Support Chat
+<p align="center">
+  <img src="public/images/screenshots/chat.png" alt="Customer Support Chat" width="90%">
+</p>
+
+### Comments Management
+<p align="center">
+  <img src="public/images/screenshots/comments.png" alt="Comments Management" width="90%">
+</p>
+
+### Admin Dashboard
+<p align="center">
+  <img src="public/images/screenshots/admin-panel.png" alt="Admin Dashboard" width="90%">
+</p>
+
+### Product Management
+<p align="center">
+  <img src="public/images/screenshots/admin-panel1.png" alt="Admin Product Management" width="90%">
+</p>
+
 ## Tech Stack
 
 | Technology | Purpose |
